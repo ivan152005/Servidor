@@ -173,7 +173,10 @@ public class Cliente {
 
     // Método para desconectarse del servidor
     // Método para desconectarse del servidor
+    // Método para desconectarse del servidor
     private void desconectar() {
+        if (!conectado) return; // Evita llamar dos veces si ya está desconectado
+
         try {
             if (out != null) {
                 out.println("SALIR"); // Enviar un mensaje especial al servidor
@@ -191,7 +194,6 @@ public class Cliente {
                 btnDesconectar.setEnabled(false);
             });
 
-            areaMensajes.append("Desconectado del servidor.\n");
         } catch (IOException e) {
             areaMensajes.append("Error al desconectar: " + e.getMessage() + "\n");
         }

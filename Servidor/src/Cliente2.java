@@ -29,7 +29,7 @@ public class Cliente2 {
         crearInterfaz();
     }
 
-    //Creación de la interfaz gráfica del cliente
+    // Creación de la interfaz gráfica del cliente
     private void crearInterfaz() {
         ventana = new JFrame("Cliente - Iniciar Sesión");
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -61,16 +61,16 @@ public class Cliente2 {
         ventana.add(panelSuperior, BorderLayout.NORTH);
         ventana.add(scrollPane, BorderLayout.CENTER);
 
-        //Acción al presionar el botón "Conectar"
+        // Acción al presionar el botón "Conectar"
         btnConectar.addActionListener(e -> conectarAlServidor());
 
-        //Acción al presionar el botón "Desconectar"
+        // Acción al presionar el botón "Desconectar"
         btnDesconectar.addActionListener(e -> desconectar());
 
         ventana.setVisible(true);
     }
 
-    //Método para conectar al servidor
+    // Método para conectar al servidor
     private void conectarAlServidor() {
         if (conectado) {
             areaMensajes.append("Ya estás conectado.\n");
@@ -92,11 +92,11 @@ public class Cliente2 {
 
             areaMensajes.append("Conectado al servidor...\n");
 
-            //Enviar usuario y contraseña
+            // Enviar usuario y contraseña
             out.println(usuario);
             out.println(contrasena);
 
-            //Deshabilitar los campos de usuario y contraseña mientras se está conectado
+            // Deshabilitar los campos de usuario y contraseña mientras se está conectado
             SwingUtilities.invokeLater(() -> {
                 txtUsuario.setEnabled(false);
                 txtContrasena.setEnabled(false);
@@ -106,7 +106,7 @@ public class Cliente2 {
 
             conectado = true;
 
-            //Hilo para recibir mensajes del servidor
+            // Hilo para recibir mensajes del servidor
             new Thread(() -> {
                 try {
                     String mensaje;
@@ -128,12 +128,12 @@ public class Cliente2 {
                             return;
                         }
 
-                        //Si el servidor avisa que se apagará en 3 segundos, iniciar la cuenta regresiva
+                        // Si el servidor avisa que se apagará en 3 segundos, iniciar la cuenta regresiva
                         if (mensajeRecibido.contains("Servidor apagándose en 3 segundos...")) {
                             iniciarCuentaRegresiva();
                         }
 
-                        //Si el cliente es expulsado o el servidor se apaga
+                        // Si el cliente es expulsado o el servidor se apaga
                         if (mensajeRecibido.contains("expulsado") || mensajeRecibido.contains("desconectado") ||
                                 mensajeRecibido.contains("El servidor se ha cerrado")) {
                             desconectar();
@@ -152,7 +152,7 @@ public class Cliente2 {
         }
     }
 
-    //Método para iniciar una cuenta regresiva en la interfaz del cliente
+    // Método para iniciar una cuenta regresiva en la interfaz del cliente
     private void iniciarCuentaRegresiva() {
         new Thread(() -> {
             try {
@@ -171,14 +171,19 @@ public class Cliente2 {
         }).start();
     }
 
-    //Método para desconectarse del servidor
+    // Método para desconectarse del servidor
+    // Método para desconectarse del servidor
     private void desconectar() {
         try {
+            if (out != null) {
+                out.println("SALIR"); // Enviar un mensaje especial al servidor
+            }
             if (socket != null && !socket.isClosed()) {
                 socket.close();
             }
             conectado = false;
 
+            // Habilitar los campos de usuario y contraseña nuevamente
             SwingUtilities.invokeLater(() -> {
                 txtUsuario.setEnabled(true);
                 txtContrasena.setEnabled(true);

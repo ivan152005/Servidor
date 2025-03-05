@@ -1,0 +1,78 @@
+mar 05, 2025 5:50:53 P. M. Servidor iniciarServidor
+INFO: Servidor iniciado en el puerto 6000
+mar 05, 2025 5:51:55 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:52:00 P. M. Servidor expulsarCliente
+INFO: Cliente desconectado: ivan - /127.0.0.1
+mar 05, 2025 5:52:05 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:52:13 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:52:43 P. M. Servidor expulsarCliente
+INFO: Cliente desconectado: ivan - /127.0.0.1
+mar 05, 2025 5:52:58 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:53:01 P. M. Servidor expulsarCliente
+INFO: Cliente desconectado: ivan - /127.0.0.1
+mar 05, 2025 5:53:20 P. M. Servidor iniciarServidor
+INFO: Servidor iniciado en el puerto 6000
+mar 05, 2025 5:53:32 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:53:40 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:53:43 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:56:26 P. M. Servidor iniciarServidor
+INFO: Servidor iniciado en el puerto 6000
+mar 05, 2025 5:56:45 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:57:43 P. M. Servidor iniciarServidor
+INFO: Servidor iniciado en el puerto 6000
+mar 05, 2025 5:58:00 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:58:08 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:58:10 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:58:52 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:58:55 P. M. Servidor expulsarCliente
+WARNING: Intento de expulsar cliente no encontrado: ivan
+mar 05, 2025 5:58:55 P. M. Servidor lambda$expulsarCliente$2
+INFO: Cliente desconectado: ivan - /127.0.0.1
+mar 05, 2025 5:59:02 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 5:59:45 P. M. Servidor detenerServidor
+INFO: Deteniendo servidor...
+mar 05, 2025 5:59:48 P. M. Servidor expulsarCliente
+WARNING: Intento de expulsar cliente no encontrado: ivan
+mar 05, 2025 5:59:48 P. M. Servidor iniciarServidor
+INFO: Servidor detenido.
+mar 05, 2025 5:59:48 P. M. Servidor detenerServidor
+INFO: Deteniendo servidor...
+mar 05, 2025 6:01:46 P. M. Servidor iniciarServidor
+INFO: Servidor iniciado en el puerto 6000
+mar 05, 2025 6:01:59 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 6:06:12 P. M. Servidor iniciarServidor
+INFO: Servidor iniciado en el puerto 6000
+mar 05, 2025 6:06:24 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 6:06:26 P. M. Servidor lambda$expulsarCliente$2
+INFO: Cliente desconectado: ivan - /127.0.0.1
+mar 05, 2025 6:06:27 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 6:06:30 P. M. Servidor lambda$expulsarCliente$2
+INFO: Cliente desconectado: ivan - /127.0.0.1
+mar 05, 2025 6:06:30 P. M. Servidor expulsarCliente
+WARNING: Intento de expulsar cliente no encontrado: ivan
+mar 05, 2025 6:06:32 P. M. Servidor iniciarServidor
+INFO: Cliente conectado desde /127.0.0.1
+mar 05, 2025 6:06:40 P. M. Servidor detenerServidor
+INFO: Deteniendo servidor...
+mar 05, 2025 6:06:43 P. M. Servidor expulsarCliente
+WARNING: Intento de expulsar cliente no encontrado: ivan
+mar 05, 2025 6:06:43 P. M. Servidor iniciarServidor
+INFO: Servidor detenido.
+mar 05, 2025 6:06:43 P. M. Servidor detenerServidor
+INFO: Deteniendo servidor...
